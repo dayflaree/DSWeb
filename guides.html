@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Horizon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img src="resources/materials/oakman/deadspace/holograms/ui/titlescreen/title_screen.png" alt="Dead Horizon Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="server-bio.html" class="nav-link">SERVER BIO</a></li>
+                <li><a href="server-info.html" class="nav-link">SERVER INFO</a></li>
+                <li><a href="branches.html" class="nav-link">BRANCHES</a></li>
+                <li><a href="guides.html" class="nav-link active">GUIDES</a></li>
+                <li><a href="crew.html" class="nav-link">CREW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-title">
+                <h1>ROLEPLAY GUIDES</h1>
+                <div class="page-triangle"></div>
+            </div>
+            <p class="page-subtitle">Learn the fundamentals of roleplay aboard the USG Horizon</p>
+        </section>
+
+        <!-- Guide Categories -->
+        <section class="guide-categories">
+            <div class="panel-container">
+                <div class="panel-header">
+                    <h3>GUIDE CATEGORIES</h3>
+                    <div class="panel-triangle"></div>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-item" onclick="showGuide('chapter1', this)">
+                        <h4>Chapter 1 - The Basics of RP</h4>
+                        <p>Fundamental roleplay concepts and terminology</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter2', this)">
+                        <h4>Chapter 2 - The Rules of RP on the Server</h4>
+                        <p>Server-specific roleplay rules and guidelines</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter3', this)">
+                        <h4>Chapter 3 - Character Creation and Development</h4>
+                        <p>Building compelling and realistic characters</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter4', this)">
+                        <h4>Chapter 4 - Faction Roleplay Guidelines</h4>
+                        <p>Roleplay guidelines for different factions</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter5', this)">
+                        <h4>Chapter 5 - Event RP and Emergency Scenarios</h4>
+                        <p>Handling events and emergency situations</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter6', this)">
+                        <h4>Chapter 6 - Balancing Passive and Active Scenes</h4>
+                        <p>Managing different types of roleplay scenes</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter7', this)">
+                        <h4>Chapter 7 - Character Relationships and Interactions</h4>
+                        <p>Building and managing character relationships</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter8', this)">
+                        <h4>Chapter 8 - Handling the Unexpected</h4>
+                        <p>Adapting to unexpected roleplay situations</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter9', this)">
+                        <h4>Chapter 9 - Long-Term Storytelling and Character Arcs</h4>
+                        <p>Building character arcs and lasting narratives</p>
+                    </div>
+                    <div class="category-item" onclick="showGuide('chapter10', this)">
+                        <h4>Chapter 10 - Using /me and /it in RP</h4>
+                        <p>Using roleplay commands effectively</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guide Content -->
+        <section class="guide-content">
+            <!-- Chapter 1 - The Basics of RP -->
+            <div id="chapter1-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 1 - THE BASICS OF RP</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 1 – The Basics of RP</h4>
+                            <div class="article-content">
+                                <h5>1.1 What is Roleplay (RP)?</h5>
+                                <p>Roleplay is the art of embodying a fictional character in a narrative or interactive setting, while respecting rules established by a server or community. In a universe like Dead Space RP, this means living through the eyes of a crew member of the USG Horizon, while respecting the lore and the specific social interactions of that environment.</p>
+                                
+                                <p>Some examples of why we do RP:</p>
+                                <ul>
+                                    <li><strong>Immersion:</strong> To dive into a universe and live a unique story.</li>
+                                    <li><strong>Collaborative storytelling:</strong> You co-create narratives with other players.</li>
+                                    <li><strong>Personal development:</strong> Playing a role helps improve your creativity and social skills.</li>
+                                </ul>
+                                
+                                <h5>1.2 Difference between Narrative RP, Passive RP, and Active RP</h5>
+                                <p><strong>Narrative RP:</strong><br>
+                                Telling a story through rich actions and dialogues, often long and detailed. Ideal for background scenes like philosophical discussions or flashbacks.</p>
+                                
+                                <p><strong>Passive RP:</strong><br>
+                                Portraying simple, realistic moments of life.<br>
+                                Example: An engineer performing maintenance on equipment, or a miner eating a meal.<br>
+                                This type of RP is encouraged because it strengthens immersion and allows you to better understand other players' characters.</p>
+                                
+                                <p><strong>Active RP:</strong><br>
+                                Fast-paced, intense actions, such as altercations or crises. While spectacular, it should not dominate, to maintain balance with Passive RP.</p>
+                                
+                                <p><strong>Example of Passive/Active balance:</strong></p>
+                                <ul>
+                                    <li><strong>Passive:</strong> You repair a console while chatting with a colleague about rising tensions between the CEC and the Unitologists.</li>
+                                    <li><strong>Active:</strong> An alarm triggers a short circuit; you must react quickly to save the situation while interacting with other players.</li>
+                                </ul>
+                                
+                                <h5>1.3 Basic Terminology</h5>
+                                <p>Terms related to RP behaviour</p>
+                                
+                                <p><strong>Prop kill</strong><br>
+                                <strong>Definition:</strong> Unrealistic or abusive use of props/objects in-game.<br>
+                                <strong>Avoid:</strong> Carrying a massive steel beam alone with no equipment or RP explanation.<br>
+                                <strong>Correct:</strong> Call a team to help or use appropriate tools.</p>
+                                
+                                <p><strong>Metagaming</strong><br>
+                                <strong>Definition:</strong> Using out-of-character (OOC) information in an in-character (IC) scene.<br>
+                                <strong>Avoid:</strong> Learning via Discord that a Unitologist is plotting in a room and instantly sending security there.<br>
+                                <strong>Correct:</strong> Wait for your character to receive this info through an RP scene.</p>
+                                
+                                <p><strong>Powergaming</strong><br>
+                                <strong>Definition:</strong> Forcing an action or outcome without letting the other player respond.<br>
+                                <strong>Avoid:</strong> "I punch you and knock you out instantly."<br>
+                                <strong>Correct:</strong> "I try to punch you in the jaw to disorient you."</p>
+                                
+                                <p><strong>Fairplay</strong><br>
+                                <strong>Definition:</strong> Playing fairly, even if it doesn't benefit your character.<br>
+                                <strong>Example:</strong> Accepting that your character is injured or in trouble if the scene justifies it.</p>
+                                
+                                <p><strong>Consistency</strong><br>
+                                <strong>Definition:</strong> Your actions must be realistic for the game universe and respect the lore.<br>
+                                <strong>Example:</strong> A maintenance engineer doesn't have the skills to defuse a complex bomb without a logical explanation.</p>
+                                
+                                <p><strong>Character Kill (CK)</strong><br>
+                                <strong>Definition:</strong> Permanent death of a character after a significant RP scene.<br>
+                                <strong>Rule:</strong> Always discuss CK with admins and involved players beforehand.</p>
+                                
+                                <p><strong>Random Death Match (RDM)</strong><br>
+                                <strong>Definition:</strong> Killing a character without valid RP reason.<br>
+                                <strong>Avoid:</strong> Shooting a colleague after a minor RP disagreement.</p>
+                                
+                                <p><strong>Player Kill (PK)</strong><br>
+                                <strong>Definition:</strong> Temporary or non-permanent death of a character. PK may be lifted if context allows.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 2 - The Rules of RP on the Server -->
+            <div id="chapter2-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 2 - THE RULES OF RP ON THE SERVER</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 2 – The Rules of RP on the Server</h4>
+                            <div class="article-content">
+                                <h5>2.1 Respect for the Universe and Lore</h5>
+                                <p>All RP must remain consistent with the Dead Space universe.</p>
+                                <ul>
+                                    <li>The timeline, factions (CEC, Unitology, EarthGov, etc.), and technologies must be respected.</li>
+                                    <li>Introducing elements from other universes (Star Wars, Halo, Marvel, etc.) is prohibited.</li>
+                                </ul>
+                                
+                                <h5>2.2 Respect for Players and Characters</h5>
+                                <ul>
+                                    <li>Treat other players with respect, whether IC (in-character) or OOC (out-of-character).</li>
+                                    <li>Avoid toxic behaviour OOC — conflicts between characters must remain in the RP context.</li>
+                                    <li>Never mix IC and OOC to target someone personally.</li>
+                                </ul>
+                                
+                                <h5>2.3 Communication and Language</h5>
+                                <ul>
+                                    <li><strong>IC:</strong> Use the vocabulary appropriate for your character's background (a miner won't use the same jargon as a CEC engineer).</li>
+                                    <li><strong>OOC:</strong> Keep communications clear and avoid spamming in voice or text chat.</li>
+                                    <li>English is the main language for RP on the server unless a scene justifies another language.</li>
+                                </ul>
+                                
+                                <h5>2.4 RP Initiatives and Consent</h5>
+                                <ul>
+                                    <li>Before starting a major or sensitive RP scene (torture, CK, hostage-taking, etc.), obtain the consent of the involved players and admins.</li>
+                                    <li>Respect "fade to black" if certain RP scenes are too explicit or uncomfortable.</li>
+                                </ul>
+                                
+                                <h5>2.5 Weapons and Combat RP</h5>
+                                <ul>
+                                    <li>Always give the other player time to react to your actions.</li>
+                                    <li>Use /me or /it to describe attacks and consequences when possible.</li>
+                                    <li>Firearms should be used logically — running around shooting without reason breaks immersion.</li>
+                                    <li>Ammunition and weapon availability must follow the server's scarcity rules.</li>
+                                </ul>
+                                
+                                <h5>2.6 Injuries and Medical RP</h5>
+                                <ul>
+                                    <li>Injuries must be logical based on the situation.</li>
+                                    <li>Healing should not be instantaneous unless justified (advanced med-gel, stasis-assisted surgery, etc.).</li>
+                                    <li>Characters should carry visible scars or consequences from major injuries.</li>
+                                </ul>
+                                
+                                <h5>2.7 Faction-Specific Rules</h5>
+                                <ul>
+                                    <li><strong>CEC Personnel:</strong> Must follow corporate hierarchy and prioritise resource extraction and safety protocols.</li>
+                                    <li><strong>Security / EarthGov:</strong> Must respect chain of command and use force proportionally.</li>
+                                    <li><strong>Unitologists:</strong> Must operate discreetly or manipulatively; overt aggression is rarely their first move.</li>
+                                    <li><strong>Miners / Technicians:</strong> Focus on work-related tasks, but can get involved in larger events logically.</li>
+                                </ul>
+                                
+                                <h5>2.8 Environment Interaction</h5>
+                                <ul>
+                                    <li>Avoid "magical" solutions — use the tools, skills, and methods your character would logically have.</li>
+                                    <li>Damaging the ship or colony without admin approval is forbidden.</li>
+                                    <li>Keep in mind that in the Dead Space universe, repairs and supplies are limited.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 3 - Character Creation and Development -->
+            <div id="chapter3-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 3 - CHARACTER CREATION AND DEVELOPMENT</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 3 – Character Creation and Development</h4>
+                            <div class="article-content">
+                                <h5>3.1 Creating Your Character</h5>
+                                <p>When creating a character, you must ensure they are believable within the Dead Space universe and fit into the server's lore.</p>
+                                
+                                <p><strong>Steps to create your character:</strong></p>
+                                <ol>
+                                    <li>Choose a role: Engineer, miner, security officer, medic, Unitologist, etc.</li>
+                                    <li>Define their background: Where were they born? What led them to work for the CEC or join the Unitologists?</li>
+                                    <li>Establish personality traits: Are they ambitious? Paranoid? Altruistic?</li>
+                                    <li>Determine skills and weaknesses: Keep it balanced. A character who is good at everything quickly becomes uninteresting.</li>
+                                    <li>Appearance and style: Keep it consistent with the universe — industrial clothing, EVA suits, work uniforms, etc.</li>
+                                </ol>
+                                
+                                <h5>3.2 Avoiding Common Character Creation Mistakes</h5>
+                                <ul>
+                                    <li><strong>The "Lone Wolf" problem:</strong> If your character avoids interaction, you'll miss out on RP opportunities.</li>
+                                    <li><strong>Overpowered backgrounds:</strong> "I'm a super soldier with advanced training in everything" is unrealistic for most roles.</li>
+                                    <li><strong>Modern pop culture references:</strong> No "Marvel fanboys" or "anime obsessives" unless they are justified in-universe (and kept subtle).</li>
+                                </ul>
+                                
+                                <h5>3.3 Character Development in RP</h5>
+                                <p>Your character should evolve based on events that happen on the server.</p>
+                                <ul>
+                                    <li>If they witness a necromorph attack, they might develop paranoia or PTSD.</li>
+                                    <li>If they're promoted, they might take on more responsibilities or become more authoritarian.</li>
+                                    <li>Relationships matter — friendships, rivalries, and alliances shape personality over time.</li>
+                                </ul>
+                                
+                                <h5>3.4 Backstory Integration</h5>
+                                <p>Don't dump your entire backstory at once. Reveal details naturally in conversations and actions.</p>
+                                <p><strong>Example:</strong> Instead of saying "I was in the colony disaster of Titan Station" immediately, let it come up in a moment of stress when your character is explaining why they hate confined spaces.</p>
+                                
+                                <h5>3.5 Playing Weaknesses Realistically</h5>
+                                <p>Flaws make characters more interesting.</p>
+                                <ul>
+                                    <li>A nervous security officer might hesitate to fire.</li>
+                                    <li>An engineer might be brilliant at fixing machinery but bad at social interaction.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 4 - Faction Roleplay Guidelines -->
+            <div id="chapter4-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 4 - FACTION ROLEPLAY GUIDELINES</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 4 – Faction Roleplay Guidelines</h4>
+                            <div class="article-content">
+                                <h5>4.1 CEC (Concordance Extraction Corporation)</h5>
+                                <p>The CEC is a massive mining and resource extraction corporation. On the server, CEC personnel form the backbone of daily operations.</p>
+                                
+                                <p><strong>RP Guidelines:</strong></p>
+                                <ul>
+                                    <li>Follow strict corporate protocols and safety procedures.</li>
+                                    <li>Prioritize resource extraction and the functioning of the ship/station.</li>
+                                    <li>Maintain professionalism, even under stress — corporate image is important.</li>
+                                    <li>Report any suspicious activity to Security, but avoid acting like a security officer unless it's part of your job.</li>
+                                </ul>
+                                
+                                <p><strong>RP Opportunities:</strong></p>
+                                <ul>
+                                    <li>Maintenance and repairs.</li>
+                                    <li>Cargo and logistics management.</li>
+                                    <li>Research and engineering projects.</li>
+                                    <li>Corporate politics and internal disputes.</li>
+                                </ul>
+                                
+                                <h5>4.2 Security / EarthGov Forces</h5>
+                                <p>Security maintains order and enforces laws aboard the vessel or colony. EarthGov presence means strict authority and oversight.</p>
+                                
+                                <p><strong>RP Guidelines:</strong></p>
+                                <ul>
+                                    <li>Respect the chain of command — orders flow from superiors down.</li>
+                                    <li>Use force only when justified and proportional.</li>
+                                    <li>Conduct regular patrols and inspections.</li>
+                                    <li>Interact with civilians calmly; intimidation without reason is discouraged.</li>
+                                </ul>
+                                
+                                <p><strong>RP Opportunities:</strong></p>
+                                <ul>
+                                    <li>Criminal investigations.</li>
+                                    <li>Guarding important assets or personnel.</li>
+                                    <li>Negotiations with factions like the Unitologists.</li>
+                                    <li>Crisis response during necromorph events.</li>
+                                </ul>
+                                
+                                <h5>4.3 Unitologists</h5>
+                                <p>Unitology is a religious movement centered on the belief that the Markers are divine artifacts. On the server, Unitologists often operate secretly or under the guise of normal crew members.</p>
+                                
+                                <p><strong>RP Guidelines:</strong></p>
+                                <ul>
+                                    <li>Avoid public, aggressive recruitment — operate subtly.</li>
+                                    <li>Gather information and influence others through conversation and persuasion.</li>
+                                    <li>Support your fellow Unitologists in secret meetings or coded communications.</li>
+                                    <li>In crisis situations, interpret events as "signs" from the Marker.</li>
+                                </ul>
+                                
+                                <p><strong>RP Opportunities:</strong></p>
+                                <ul>
+                                    <li>Covert planning and sabotage.</li>
+                                    <li>Infiltrating CEC ranks or other factions.</li>
+                                    <li>Religious debates with non-believers.</li>
+                                    <li>Organizing secret gatherings.</li>
+                                </ul>
+                                
+                                <h5>4.4 Miners and Technicians</h5>
+                                <p>The labour force that keeps operations running. They are often overworked, underpaid, and exposed to dangerous conditions.</p>
+                                
+                                <p><strong>RP Guidelines:</strong></p>
+                                <ul>
+                                    <li>Stay focused on your tasks, but allow for downtime interactions with colleagues.</li>
+                                    <li>Voice concerns about working conditions or safety hazards.</li>
+                                    <li>Create bonds with other workers; unity matters in dangerous jobs.</li>
+                                </ul>
+                                
+                                <p><strong>RP Opportunities:</strong></p>
+                                <ul>
+                                    <li>Team-based mining expeditions.</li>
+                                    <li>Discovering anomalies during work.</li>
+                                    <li>Workplace disputes or strikes.</li>
+                                    <li>Repairing essential ship/station systems.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 5 - Event RP and Emergency Scenarios -->
+            <div id="chapter5-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 5 - EVENT RP AND EMERGENCY SCENARIOS</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 5 – Event RP and Emergency Scenarios</h4>
+                            <div class="article-content">
+                                <h5>5.1 What is an Event in RP?</h5>
+                                <p>An event is a scripted or improvised situation designed to break the routine and create unique interactions. On a Dead Space server, events can range from small technical problems to full-scale necromorph outbreaks.</p>
+                                
+                                <p><strong>Event Types:</strong></p>
+                                <ul>
+                                    <li><strong>Minor events:</strong> Power failures, missing equipment, disputes between factions.</li>
+                                    <li><strong>Medium events:</strong> Cargo bay accident, reactor instability, medical emergency.</li>
+                                    <li><strong>Major events:</strong> Necromorph infestation, major sabotage, full evacuation.</li>
+                                </ul>
+                                
+                                <h5>5.2 Player Responsibilities During Events</h5>
+                                <ul>
+                                    <li>Follow the tone and pacing of the scene.</li>
+                                    <li>Avoid "breaking" the event with unrealistic actions.</li>
+                                    <li>Let the event develop naturally — not every situation needs an instant solution.</li>
+                                </ul>
+                                
+                                <h5>5.3 Necromorph Outbreak Protocols</h5>
+                                <p>When necromorphs appear, panic is normal — but there are RP rules to keep scenes fun and believable.</p>
+                                
+                                <p><strong>General Guidelines:</strong></p>
+                                <ul>
+                                    <li>Necromorphs are extremely dangerous. Even trained security should be cautious.</li>
+                                    <li>Civilian characters should prioritize hiding or fleeing, not fighting head-on.</li>
+                                    <li>If your character is infected or fatally wounded, coordinate with staff to play out the scene logically (CK, PK, or medical intervention).</li>
+                                    <li>Use the ship's or station's design for creative scenes — blocked corridors, ventilation shafts, locked blast doors.</li>
+                                </ul>
+                                
+                                <p><strong>Example RP Flow:</strong></p>
+                                <ol>
+                                    <li>Alarms sound; the ship enters emergency lockdown.</li>
+                                    <li>Security attempts to cordon off infected areas.</li>
+                                    <li>Engineers reroute power to critical systems.</li>
+                                    <li>Civilians evacuate to safe zones.</li>
+                                    <li>The outbreak either gets contained or forces evacuation.</li>
+                                </ol>
+                                
+                                <h5>5.4 Sabotage and Covert Operations</h5>
+                                <p>These are player-driven events where stealth and planning are essential.</p>
+                                
+                                <p><strong>Key RP Points:</strong></p>
+                                <ul>
+                                    <li>Don't sabotage without an IC reason.</li>
+                                    <li>Give other players a chance to notice or respond.</li>
+                                    <li>Avoid instant "big destruction" — build tension over time.</li>
+                                </ul>
+                                
+                                <h5>5.5 Medical and Rescue Events</h5>
+                                <p>Medical RP is an opportunity for detailed, immersive storytelling.</p>
+                                <ul>
+                                    <li>Use believable injury descriptions and treatments.</li>
+                                    <li>Include time for diagnosis, surgery, or recovery.</li>
+                                    <li>Rescue operations should involve teamwork and coordination.</li>
+                                </ul>
+                                
+                                <h5>5.6 Admin-Run vs Player-Run Events</h5>
+                                <ul>
+                                    <li><strong>Admin-run:</strong> Often large-scale, impacting the whole server.</li>
+                                    <li><strong>Player-run:</strong> Smaller, more personal stories between a few characters.</li>
+                                    <li>Both are valuable and can be combined for depth.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 6 - Balancing Passive and Active Scenes -->
+            <div id="chapter6-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 6 - BALANCING PASSIVE AND ACTIVE SCENES</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 6 - Balancing Passive and Active Scenes</h4>
+                            <div class="article-content">
+                                <h5>6.1 Passive vs Active</h5>
+                                <ul>
+                                    <li><strong>Passive:</strong> Calm moments (dialogue, exploration, daily tasks). Builds immersion and reveals character depth.</li>
+                                    <li><strong>Active:</strong> High tension (combat, alarms, sabotage). Advances story and forces quick decisions.</li>
+                                </ul>
+                                
+                                <h5>6.2 Why Passive Matters</h5>
+                                <ul>
+                                    <li>Deepens character psychology and reveals backstory.</li>
+                                    <li>Builds authentic crew life (maintenance, meals, casual talks).</li>
+                                    <li>Strengthens relationships, alliances, or rivalries that affect later actions.</li>
+                                </ul>
+                                
+                                <h5>6.3 Why Active Matters</h5>
+                                <ul>
+                                    <li>Pushes the story forward through danger or crisis.</li>
+                                    <li>Strengthens teamwork under stress (repairs, security, evacuation).</li>
+                                    <li>Creates suspense and motivation with high stakes.</li>
+                                </ul>
+                                
+                                <h5>6.4 Balancing the Two</h5>
+                                <ul>
+                                    <li>Alternate naturally: quiet moments after chaos, tension built from calm.</li>
+                                    <li>Plant seeds in passive scenes (e.g., data anomaly) that bloom into active events (system failure).</li>
+                                    <li>Keep transitions smooth to maintain immersion.</li>
+                                </ul>
+                                
+                                <h5>6.5 Example Flow</h5>
+                                <ul>
+                                    <li><strong>Passive:</strong> Crew meeting in archives about Aegis VII findings.</li>
+                                    <li><strong>Transition:</strong> A character notices anomalies in planetary data.</li>
+                                    <li><strong>Active:</strong> Emergency alarm sounds, attack begins, crew must act quickly.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 7 - Character Relationships and Interactions -->
+            <div id="chapter7-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 7 - CHARACTER RELATIONSHIPS AND INTERACTIONS</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 7 – Character Relationships and Interactions</h4>
+                            <div class="article-content">
+                                <h5>7.1 Importance of Relationships</h5>
+                                <p>Characters don't exist in isolation. Their connections with others shape their development, influence decisions, and generate drama. Building relationships also makes RP more immersive and long-lasting.</p>
+                                
+                                <p><strong>Examples:</strong></p>
+                                <ul>
+                                    <li>A miner constantly arguing with security about safety rules.</li>
+                                    <li>A Unitologist trying to recruit or subtly manipulate a colleague.</li>
+                                    <li>A medic growing attached to patients after repeated rescues.</li>
+                                </ul>
+                                
+                                <h5>7.2 Types of Relationships</h5>
+                                <ul>
+                                    <li><strong>Friendships:</strong> Provide trust, support, and shared goals. They give reasons to act selflessly.</li>
+                                    <li><strong>Rivalries:</strong> Fuel conflict and tension. Rivalries should stay IC and never bleed into OOC.</li>
+                                    <li><strong>Professional ties:</strong> Work hierarchies (CEC chain of command, Security ranks) add realism.</li>
+                                    <li><strong>Romantic ties:</strong> Allowed if handled maturely and with consent. Avoid making romance the only focus.</li>
+                                </ul>
+                                
+                                <h5>7.3 Interaction Techniques</h5>
+                                <ul>
+                                    <li>Use dialogue to reveal character flaws, fears, or ambitions.</li>
+                                    <li>Show consistency: a paranoid engineer will remain suspicious, even in casual conversations.</li>
+                                    <li>Body language and behavior matter: short responses, hesitation, or nervous habits enrich RP.</li>
+                                </ul>
+                                
+                                <h5>7.4 Conflict RP</h5>
+                                <ul>
+                                    <li>Conflict is essential for drama but should remain respectful.</li>
+                                    <li>Always give the other player options to respond.</li>
+                                    <li>Don't force outcomes — conflict should create RP, not shut it down.</li>
+                                    <li>A disagreement can escalate into sabotage, betrayal, or grudging respect.</li>
+                                </ul>
+                                
+                                <h5>7.5 Cooperation RP</h5>
+                                <ul>
+                                    <li>Collaboration also creates strong RP opportunities.</li>
+                                    <li>Joint missions (mining ops, security patrols, medical rescues) bring characters together.</li>
+                                    <li>Shared successes or failures can strengthen bonds or deepen tensions.</li>
+                                    <li>Even rivals may cooperate when survival is at stake.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 8 - Handling the Unexpected -->
+            <div id="chapter8-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 8 - HANDLING THE UNEXPECTED</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 8 – Handling the Unexpected</h4>
+                            <div class="article-content">
+                                <h5>8.1 The Nature of Improvised RP</h5>
+                                <p>No matter how much you plan, RP often takes unexpected turns. A character might make a surprising decision, or an event may spiral out of control. Improvised RP keeps the world alive and unpredictable, but it requires adaptability and respect for others.</p>
+                                
+                                <h5>8.2 Player Reactions</h5>
+                                <ul>
+                                    <li>Stay in character even when surprised — don't break immersion with OOC frustration.</li>
+                                    <li>Use unexpected moments to enrich your character rather than resist them.</li>
+                                </ul>
+                                <p><strong>Example:</strong> If your character is falsely accused, use it to develop paranoia, mistrust, or determination to clear their name.</p>
+                                
+                                <h5>8.3 Admin and Event Team Role</h5>
+                                <ul>
+                                    <li>Admins may introduce sudden twists (sabotage, system failures, or necromorph outbreaks).</li>
+                                    <li>Accept these as opportunities, not obstacles.</li>
+                                    <li>If something feels unfair, resolve it OOC after the scene rather than interrupt RP.</li>
+                                </ul>
+                                
+                                <h5>8.4 Turning Surprises into Storytelling</h5>
+                                <p>Unexpected events create memorable stories.</p>
+                                <ul>
+                                    <li>A minor error in maintenance could trigger a chain reaction leading to a full emergency.</li>
+                                    <li>A Unitologist recruit might reveal their allegiance in a crisis, shocking the crew.</li>
+                                    <li>A random encounter in a corridor can evolve into a long-lasting rivalry or alliance.</li>
+                                </ul>
+                                
+                                <h5>8.5 Tips for Adaptability</h5>
+                                <ul>
+                                    <li>Listen actively: build off what others bring to the scene.</li>
+                                    <li>Avoid blocking RP: don't shut down another player's idea outright — find ways to incorporate it.</li>
+                                    <li>Be flexible with your character's arc: allow them to grow from failure as much as from success.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 9 - Long-Term Storytelling and Character Arcs -->
+            <div id="chapter9-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 9 - LONG-TERM STORYTELLING AND CHARACTER ARCS</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 9 – Long-Term Storytelling and Character Arcs</h4>
+                            <div class="article-content">
+                                <h5>9.1 Building a Long-Term Arc</h5>
+                                <p>Your character should evolve across weeks of RP, shaped by successes, failures, and relationships. A long-term arc makes RP feel alive and gives weight to daily interactions.</p>
+                                
+                                <p><strong>Examples of arcs:</strong></p>
+                                <ul>
+                                    <li>An overconfident security officer slowly becomes more cautious after repeated near-death experiences.</li>
+                                    <li>A miner who distrusts Unitologists eventually joins them after months of persuasion.</li>
+                                    <li>A medic who starts as an optimist grows jaded by repeated trauma cases.</li>
+                                </ul>
+                                
+                                <h5>9.2 Consistency Over Time</h5>
+                                <p>Stay consistent with past events. Characters should remember injuries, conflicts, and promises. If they forget everything each session, immersion is broken.</p>
+                                <p><strong>Tip:</strong> Keep a small log of key events that shaped your character (injuries, betrayals, promotions, etc.).</p>
+                                
+                                <h5>9.3 The Role of Conflict and Drama</h5>
+                                <p>Long-term arcs thrive on conflict. Rivalries, faction tension, or internal doubts give you material for weeks of RP.</p>
+                                <ul>
+                                    <li>Don't aim for constant victory; defeats and setbacks create depth.</li>
+                                </ul>
+                                <p><strong>Example:</strong> A character betrayed by a colleague might act more paranoid, affecting every interaction.</p>
+                                
+                                <h5>9.4 Relationships in Long-Term Arcs</h5>
+                                <p>Evolving relationships are central to storytelling. Friendships can turn into rivalries, romances into tragedies, or colleagues into bitter enemies. These shifts should feel gradual and natural, not forced.</p>
+                                
+                                <h5>9.5 Closure and Endings</h5>
+                                <p>Not every arc needs a happy ending.</p>
+                                <ul>
+                                    <li>A character may die (CK) at the peak of their story, leaving a strong memory.</li>
+                                    <li>Others may retire, transfer, or leave the colony/ship logically.</li>
+                                    <li>Endings provide space for new characters and fresh stories.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chapter 10 - Using /me and /it in RP -->
+            <div id="chapter10-guide" class="guide-section" style="display: none;">
+                <div class="panel-container">
+                    <div class="panel-header">
+                        <h3>CHAPTER 10 - USING /ME AND /IT IN RP</h3>
+                        <div class="panel-triangle"></div>
+                    </div>
+                    <div class="guide-articles">
+                        <article class="guide-article">
+                            <h4>Chapter 10 – Using /me and /it in RP</h4>
+                            <div class="article-content">
+                                <h5>10.1 Purpose of /me</h5>
+                                <p>The /me command describes your character's actions, expressions, or tone beyond dialogue. It enriches immersion by showing what can't be conveyed through words alone.</p>
+                                
+                                <p><strong>Examples:</strong></p>
+                                <ul>
+                                    <li>/me wipes the sweat from his forehead while checking the reactor console.</li>
+                                    <li>/me lowers her voice, glancing nervously at the corridor behind her.</li>
+                                </ul>
+                                
+                                <h5>10.2 Purpose of /it</h5>
+                                <p>The /it command is used to describe environmental details or effects visible to everyone. It helps create atmosphere and sets the scene.</p>
+                                
+                                <p><strong>Examples:</strong></p>
+                                <ul>
+                                    <li>/it The lights flicker as the sound of grinding metal echoes through the corridor.</li>
+                                    <li>/it A faint smell of burnt flesh lingers in the medbay.</li>
+                                </ul>
+                                
+                                <h5>10.3 Best Practices</h5>
+                                <ul>
+                                    <li>Keep descriptions clear and concise — avoid writing entire paragraphs in a single emote.</li>
+                                    <li>Don't control another player's character in your /me or /it. (Bad example: /me punches John and breaks his nose instantly.) Instead, allow interaction: /me swings a fist toward John's face.</li>
+                                    <li>Use them to enhance immersion, not to "win" a situation.</li>
+                                </ul>
+                                
+                                <h5>10.4 Why They Matter in Dead Space RP</h5>
+                                <p>The Dead Space atmosphere thrives on details: fear, tension, and paranoia. Using /me and /it effectively lets players experience the claustrophobic, decaying environment as if they were truly there.</p>
+                                
+                                <p><strong>Example Flow:</strong></p>
+                                <ul>
+                                    <li>/me tightens his grip on the plasma cutter, breathing heavily.</li>
+                                    <li>/it The hallway beyond is silent, except for the faint scratching of something in the vents.</li>
+                                    <li>Dialogue and action flow naturally from there.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect to Server -->
+        <section class="connect-section">
+            <div class="panel-container">
+                <div class="panel-header">
+                    <h3>READY TO JOIN?</h3>
+                    <div class="panel-triangle"></div>
+                </div>
+                <div class="connect-content">
+                    <div class="connect-description">
+                        <p>Now that you've read the guides, you're ready to start your journey aboard the USG Horizon. Connect to the server and begin your roleplay experience in deep space.</p>
+                    </div>
+                    <div class="connect-actions">
+                        <a href="server-info.html" class="btn btn-secondary">CONNECT TO SERVER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DEAD HORIZON</h4>
+                <p>Skippy's Dead Space Roleplay</p>
+            </div>
+            <div class="footer-section">
+                <h4>CONNECT</h4>
+                <p>Discord: <a href="https://discord.com/invite/SET6dh9YZz" target="_blank">Join Server</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>RESOURCES</h4>
+                <p>Content Pack: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3545499314" target="_blank">Steam Workshop</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dead Horizon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function showGuide(guideType, element) {
+            // Validate input parameters
+            if (!guideType || typeof guideType !== 'string') {
+                console.error('Invalid guideType parameter');
+                return;
+            }
+            
+            // Hide all guide sections
+            const allGuides = document.querySelectorAll('.guide-section');
+            allGuides.forEach(guide => {
+                guide.style.display = 'none';
+            });
+            
+            // Show selected guide
+            const selectedGuide = document.getElementById(guideType + '-guide');
+            if (selectedGuide) {
+                selectedGuide.style.display = 'block';
+                selectedGuide.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error('Guide section not found: ' + guideType + '-guide');
+            }
+            
+            // Update category selection
+            const categories = document.querySelectorAll('.category-item');
+            categories.forEach(category => {
+                category.classList.remove('active');
+            });
+            if (element && element.classList) {
+                element.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

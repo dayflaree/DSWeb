@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Horizon</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <img src="resources/materials/oakman/deadspace/holograms/ui/titlescreen/title_screen.png" alt="Dead Horizon Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="server-bio.html" class="nav-link">SERVER BIO</a></li>
+                <li><a href="server-info.html" class="nav-link active">SERVER INFO</a></li>
+                <li><a href="branches.html" class="nav-link">BRANCHES</a></li>
+                <li><a href="guides.html" class="nav-link">GUIDES</a></li>
+                <li><a href="crew.html" class="nav-link">CREW</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-title">
+                <h1>SERVER INFORMATION</h1>
+                <div class="page-triangle"></div>
+            </div>
+            <p class="page-subtitle">Connection details and server specifications</p>
+        </section>
+
+        <!-- Connection Information -->
+        <section class="connection-info">
+            <div class="panel-container">
+                <div class="panel-header">
+                    <h3>CONNECTION DETAILS</h3>
+                    <div class="panel-triangle"></div>
+                </div>
+                <div class="connection-grid">
+                    <div class="connection-item">
+                        <div class="connection-label">SERVER IP</div>
+                        <div class="connection-value">
+                            <span class="ip-address">194.69.160.33:27054</span>
+                            <button class="copy-btn" onclick="copyToClipboard('194.69.160.33:27054', this)">COPY</button>
+                        </div>
+                    </div>
+                    <div class="connection-item">
+                        <div class="connection-label">SERVER NAME</div>
+                        <div class="connection-value">Skippy's Dead Space RP</div>
+                    </div>
+                    <div class="connection-item">
+                        <div class="connection-label">GAME MODE</div>
+                        <div class="connection-value">DarkRP</div>
+                    </div>
+                    <div class="connection-item">
+                        <div class="connection-label">MAX PLAYERS</div>
+                        <div class="connection-value">50</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Pack Information -->
+        <section class="content-pack">
+            <div class="panel-container">
+                <div class="panel-header">
+                    <h3>CONTENT PACK</h3>
+                    <div class="panel-triangle"></div>
+                </div>
+                <div class="content-pack-info">
+                    <div class="pack-details">
+                        <h4>Content Pack</h4>
+                        <p>Download the required content pack from Steam Workshop to join the server. The pack includes all necessary assets for the Dead Space roleplay experience.</p>
+                        
+                        <div class="pack-download">
+                            <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3545499314" target="_blank" class="btn btn-primary">DOWNLOAD CONTENT PACK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Quick Connect -->
+        <section class="quick-connect">
+            <div class="panel-container">
+                <div class="panel-header">
+                    <h3>QUICK CONNECT</h3>
+                    <div class="panel-triangle"></div>
+                </div>
+                <div class="connect-content">
+                    <div class="connect-instructions">
+                        <h4>HOW TO CONNECT</h4>
+                        <ol>
+                            <li>Launch Garry's Mod from your Steam library</li>
+                            <li>Open the developer console using your configured console keybind</li>
+                            <li>Type the following command: <span class="ip-highlight">connect 194.69.160.33:27054</span></li>
+                            <li>Once connected, add the server to your favorites for easy future access</li>
+                            <li>Complete your character creation and begin your roleplay journey</li>
+                        </ol>
+                    </div>
+                    <div class="connect-actions">
+                        <button class="btn btn-primary" onclick="copyToClipboard('194.69.160.33:27054', this)">
+                            COPY SERVER IP
+                        </button>
+                        <a href="https://discord.com/invite/SET6dh9YZz" class="btn btn-secondary" target="_blank">
+                            JOIN DISCORD
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>DEAD HORIZON</h4>
+                <p>Skippy's Dead Space Roleplay</p>
+            </div>
+            <div class="footer-section">
+                <h4>CONNECT</h4>
+                <p>Discord: <a href="https://discord.com/invite/SET6dh9YZz" target="_blank">Join Server</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>RESOURCES</h4>
+                <p>Content Pack: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3545499314" target="_blank">Steam Workshop</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dead Horizon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Show success message
+                if (button) {
+                    const originalText = button.textContent;
+                    button.textContent = 'COPIED!';
+                    button.style.background = 'var(--ds-accent-green)';
+                    button.style.color = 'var(--ds-dark-bg)';
+                    
+                    setTimeout(() => {
+                        button.textContent = originalText;
+                        button.style.background = '';
+                        button.style.color = '';
+                    }, 2000);
+                }
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+                // Fallback for older browsers
+                try {
+                    const textArea = document.createElement('textarea');
+                    textArea.value = text;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    const successful = document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    
+                    if (successful) {
+                        // Show success message for fallback too
+                        if (button) {
+                            const originalText = button.textContent;
+                            button.textContent = 'COPIED!';
+                            button.style.background = 'var(--ds-accent-green)';
+                            button.style.color = 'var(--ds-dark-bg)';
+                            
+                            setTimeout(() => {
+                                button.textContent = originalText;
+                                button.style.background = '';
+                                button.style.color = '';
+                            }, 2000);
+                        }
+                    } else {
+                        throw new Error('Fallback copy failed');
+                    }
+                } catch (fallbackErr) {
+                    console.error('Fallback copy also failed: ', fallbackErr);
+                    // Show error message
+                    if (button) {
+                        const originalText = button.textContent;
+                        button.textContent = 'FAILED';
+                        button.style.background = 'var(--ds-accent-red)';
+                        button.style.color = 'var(--ds-text-primary)';
+                        
+                        setTimeout(() => {
+                            button.textContent = originalText;
+                            button.style.background = '';
+                            button.style.color = '';
+                        }, 2000);
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
